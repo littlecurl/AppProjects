@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+这里把整个Activity_login的布局设置成相对布局，
+因为相对布局比较灵活，想咋放咋放
+看代码，上来就是三个 xmlns，xml这仨字母认识，ns这俩字母是namespace的缩写
+正是有了这些namespace的声明，才能在不同的xml中使用相同的id名，
+而不会造成使用时的冲突
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".loginActivity">
+<!--
+整体是相对布局，
+在整体上方放三个东西，这三个东西也是相对布局
+合在一起称为一个top
+一个返回箭头   ←
+两个文字显示   登录  注册
+也就是说   login界面的上方长这个样子
+      ←   登录       注册
+下面是具体代码
+-->
+    <RelativeLayout
+        android:id="@+id/rl_loginactivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_minefragment_top" >
+    <ImageView
+        android:id="@+id/iv_loginactivity_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_left_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/tv_loginactivity_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/iv_loginactivity_back"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_loginactivity_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        />
+    </RelativeLayout>
+<!--
+ 顶部三个东西摆放好之后
+ 就该来摆放登录时候的两个文本输入框了
+ 用户名
+ 密码
+ 这个明显的是LinerLayout
+ LinerLayout必须指明orientation 方向 要么垂直vertical 要么水平 horizontal
+ 这里显然是垂直vertical
+ -->
+    <LinearLayout
+        android:id="@+id/ll_loginactivity_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_loginactivity_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_loginactivity_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："/>
+            <EditText
+                android:id="@+id/et_loginactivity_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号/邮箱/用户名"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_loginactivity_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码："/>
+            <EditText
+                android:id="@+id/et_loginactivity_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="登录密码"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--
+  填好用户名、密码后，就该点击登录按钮了
+  注意最后有一句： android:onClick="onClick"
+  这是应用了一个开源库，详细信息在loginActivity.java 中有注释
+  -->
+    <Button
+        android:id="@+id/bt_loginactivity_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_loginactivity_two"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:text="登录"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+<!--
+    为了App的人性化，
+    想到有以下三种无法密码登录的异常处理情况
+    一、密码错误，重新输入
+    二、忘记密码，重新修改密码
+    三、不想注册，通过短信验证登录
+    密码输错了，重新输入，这个没啥说的
+    忘记密码应该以一个可以点击的文字出现在登录按钮的左下方
+    短信验证登录也以一个可以点击的文字出现在登录按钮的右下方
+-->
+    <TextView
+        android:id="@+id/tv_loginactivity_forget"
+        android:text="忘记密码"
+        android:textColor="#f00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_loginactivity_login"
+        android:layout_alignLeft="@+id/bt_loginactivity_login"
+        />
+    <TextView
+        android:id="@+id/tv_loginactivity_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信验证码登录"
+        android:textColor="#f00"
+        android:layout_marginRight="50dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_loginactivity_login"
+        android:layout_alignRight="@+id/bt_loginactivity_login"
+        />
+<!--
+当然，QQ、微信、微博、GitHub...在当今如此火热
+登录的时候完全可以免注册
+直接使用第三方登录
+  -->
+    <TextView
+        android:id="@+id/tv_loginactivity_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_loginactivity_forget"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="30dp"
+
+        android:text="---------------------------第三方登录---------------------------"
+        android:textColor="#B3B3B3"
+        android:gravity="center"
+        />
+</RelativeLayout>

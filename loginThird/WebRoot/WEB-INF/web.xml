@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <display-name>loginThird</display-name>
+    <!-- 
+  	此工程需要web.xml,来配置Servlet的路径
+  	客户端，通过浏览器的url，例如《协议名》http://《主机映射名或主机地址》localhost:8080/《项目名》loginSecond/《访问资源》login.html
+  	访问到login.html后，HTML的表单action指向<servlet-mapping>的<url-pattern>,继续指向<servlet-name>最终指向<servlet-class>
+  	获取封装的请求并进行相关处理。
+  	前端由html显示，
+  	后端业务
+  	连接数据库方面是使用解耦的JDBC技术封装成ConnectionUtils类来实现自定义接口UserDao的方法getUserByUsernameAndPassword()，当然这需要一个javabean类User。
+  	而逻辑验证方面是实现了Servlet的doPost方法，从而进行获取post请求并响应。
+   -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.example.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+</web-app>

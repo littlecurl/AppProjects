@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<!-- 声明编码，否则容易出乱码  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- 以下居中样式来自：https://segmentfault.com/a/1190000016675252 -->
+		<style>
+			.child {
+			    position: absolute;
+			    left: 50%;
+			    transform: translateX(-50%);
+			    margin-top: 150px;
+			    padding: 10px;
+			    background-color: pink;
+		    }
+		    .parent {
+		   		position:relative;
+		    }
+		</style>
+	</head>
+	<div class="parent">
+	<body>
+		<div class="child">
+		<h1>欢迎登陆</h1>
+		<form action="login" method="post">
+			用户名 ：<input type="text" name="username" />
+			<br />
+			密&emsp;码 ：<input type="password" name="password" />
+			<br />
+			<input type="submit" value="登陆" />
+			
+		</form>
+		</div>
+	</body>
+	</div>
+	
+</html>

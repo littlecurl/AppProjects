@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "53242552378",
+    "firebase_url": "https://kotlinmessager-bd8c4.firebaseio.com",
+    "project_id": "kotlinmessager-bd8c4",
+    "storage_bucket": "kotlinmessager-bd8c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53242552378:android:f50c2ad6ed242e21",
+        "android_client_info": {
+          "package_name": "com.example.acer.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53242552378-kvai3d9v7ead6ohqddsg88dvrt3es374.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLr9j9ndNUYt3-DUT8yKpwnJTXAezrxCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

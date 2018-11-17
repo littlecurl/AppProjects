@@ -3,7 +3,7 @@
     <display-name>loginThird</display-name>
     <!-- 
   	此工程需要web.xml,来配置Servlet的路径
-  	客户端，通过浏览器的url，例如《协议名》http://《主机映射名或主机地址》localhost:8080/《项目名》loginSecond/《访问资源》login.html
+  	客户端，通过浏览器的url，例如《协议名》http://《主机映射名或主机地址》localhost:8080/《Context Root，即一般指项目名》loginSecond/《访问资源》login.html
   	访问到login.html后，HTML的表单action指向<servlet-mapping>的<url-pattern>,继续指向<servlet-name>最终指向<servlet-class>
   	获取封装的请求并进行相关处理。
   	前端由html显示，

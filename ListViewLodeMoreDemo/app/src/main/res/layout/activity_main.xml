@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+    <!-- 使用自定义布局,layout_width原先值为fill_parent已经被废弃，替代为match_parent -->
+    <com.imooc.view.ReflashListView
+        android:id="@+id/reflash_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#000"
+        android:dividerHeight="5dp" />
+    <com.imooc.view.LoadListView
+        android:id="@+id/load_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#000"
+        android:dividerHeight="5dp" />
+
+</RelativeLayout>

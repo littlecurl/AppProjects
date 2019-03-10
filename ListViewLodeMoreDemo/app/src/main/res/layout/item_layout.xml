@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/app_item_bg"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/item3_apkiv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/test_icon"
+            android:layout_marginLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item3_apkname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应用程序的名字"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/item3_apkinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="应用程序信息"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    <Button
+        android:id="@+id/item3_dlbtn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dlbtn_selector"
+        android:layout_marginRight="10dp"
+        android:text="安装"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item3_apkdes"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:text="应用程序描述"
+        android:textSize="14dp"/>
+
+</LinearLayout>

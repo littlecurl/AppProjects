@@ -112,6 +112,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                     textview_data = textview_data + "\n" + name;
                 }
                 textview.setText(textview_data);
+				// 关闭游标，释放资源
+				cursor.close();
                 break;
             //查询全部按钮下面的清除查询按钮
             case R.id.clear_query:

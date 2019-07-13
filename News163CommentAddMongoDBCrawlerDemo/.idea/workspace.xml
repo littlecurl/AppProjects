@@ -11,12 +11,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/MongoDBUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="-100">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,14 +27,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="869">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
-                <element signature="method#getNewsListFromUrl#0;class#Main#0" />
-                <element signature="method#getCommentJsonUrlListFromUrl#0;class#Main#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#getNewsDetailFromUrl#0;class#Main#0" />
                 <element signature="docComment;method#getCommentsJsonHtmlFromUrl#0;class#Main#0" />
-                <element signature="method#getCommentsJsonHtmlFromUrl#0;class#Main#0" />
-                <element signature="method#getCommentsContentFromHtml#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -57,6 +55,7 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/MongoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/cn/edu/heuet/MongoDBTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/edu/heuet/ReplaceFirstTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java" />
       </list>
     </option>
@@ -84,7 +83,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="495" />
     <option name="y" value="80" />
     <option name="width" value="1195" />
@@ -95,7 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,13 +157,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563011035770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563036040497" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm-redis/RedisStudy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -203,22 +202,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBTest.FilterfindTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="News163CommentCrawlerDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.heuet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.edu.heuet" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.MongoDBTest" />
-      <option name="METHOD_NAME" value="FilterfindTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MongoDBTest.findFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="News163CommentCrawlerDemo" />
       <extension name="coverage">
@@ -230,22 +213,6 @@
       <option name="PACKAGE_NAME" value="cn.edu.heuet" />
       <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.MongoDBTest" />
       <option name="METHOD_NAME" value="findFirstTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MongoDBTest.findTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="News163CommentCrawlerDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.heuet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.edu.heuet" />
-      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.MongoDBTest" />
-      <option name="METHOD_NAME" value="findTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -267,13 +234,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReplaceFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="News163CommentCrawlerDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.heuet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.heuet" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.ReplaceFirstTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplaceFirstTest.replaceFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="News163CommentCrawlerDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.heuet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.heuet" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.ReplaceFirstTest" />
+      <option name="METHOD_NAME" value="replaceFirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ReplaceFirstTest" />
+        <item itemvalue="JUnit.ReplaceFirstTest.replaceFirstTest" />
         <item itemvalue="JUnit.MongoDBTest.insertOneTest" />
         <item itemvalue="JUnit.MongoDBTest.findFirstTest" />
-        <item itemvalue="JUnit.MongoDBTest.FilterfindTest" />
-        <item itemvalue="JUnit.MongoDBTest.findTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,23 +284,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562904432511</updated>
-      <workItem from="1562904435548" duration="16969000" />
+      <workItem from="1562904435548" duration="17271000" />
+      <workItem from="1563034357226" duration="1482000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MongoDBTest_deleteOneTest - 2019.07.13 at 16h 05m 16s.xml">
-      <configuration name="MongoDBTest.deleteOneTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MongoDBTest_deleteManyTest - 2019.07.13 at 16h 06m 12s.xml">
-      <configuration name="MongoDBTest.deleteManyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MongoDBTest_insertManyTest - 2019.07.13 at 16h 06m 49s.xml">
-      <configuration name="MongoDBTest.insertManyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MongoDBTest_updateOneTest - 2019.07.13 at 16h 07m 06s.xml">
-      <configuration name="MongoDBTest.updateOneTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MongoDBTest_updateManyTest - 2019.07.13 at 16h 07m 28s.xml">
       <configuration name="MongoDBTest.updateManyTest" configurationId="JUnit" />
     </history-entry>
@@ -322,43 +308,54 @@
     <history-entry file="MongoDBTest_insertOneTest - 2019.07.13 at 16h 16m 25s.xml">
       <configuration name="MongoDBTest.insertOneTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReplaceFirstTest - 2019.07.14 at 00h 29m 47s.xml">
+      <configuration name="ReplaceFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReplaceFirstTest_replaceFirstTest - 2019.07.14 at 00h 31m 08s.xml">
+      <configuration name="ReplaceFirstTest.replaceFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReplaceFirstTest - 2019.07.14 at 00h 31m 24s.xml">
+      <configuration name="ReplaceFirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReplaceFirstTest - 2019.07.14 at 00h 31m 53s.xml">
+      <configuration name="ReplaceFirstTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16969000" />
+    <option name="totallyTimeSpent" value="18753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1446" height="878" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1446" height="878" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22982709" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2334294" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32931727" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04016064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27175367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3299712" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3299712" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,16 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/MongoDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/MongoDBTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -403,13 +391,6 @@
           <caret line="7" column="28" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="28" />
           <caret line="8" column="31" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="31" />
           <caret line="9" column="32" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -439,24 +420,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/MongoDBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="-100">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/edu/heuet/ReplaceFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="869">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
-            <element signature="method#getNewsListFromUrl#0;class#Main#0" />
-            <element signature="method#getCommentJsonUrlListFromUrl#0;class#Main#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#getNewsDetailFromUrl#0;class#Main#0" />
             <element signature="docComment;method#getCommentsJsonHtmlFromUrl#0;class#Main#0" />
-            <element signature="method#getCommentsJsonHtmlFromUrl#0;class#Main#0" />
-            <element signature="method#getCommentsContentFromHtml#0;class#Main#0" />
           </folding>
         </state>
       </provider>

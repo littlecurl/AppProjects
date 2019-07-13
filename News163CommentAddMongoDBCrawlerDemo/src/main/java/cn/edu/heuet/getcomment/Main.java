@@ -32,7 +32,7 @@ public class Main {
     public static void main(String[] args) {
 
         String mUrl = "https://news.163.com/domestic/";
-        int newsCount = 20;
+        int newsCount = 10;
         // 程序执行开始时间
         long startTime = System.currentTimeMillis();
 
@@ -46,7 +46,7 @@ public class Main {
             // 根据新闻列表中的每一个url获得新闻详细信息
             News newsDetail = getNewsDetailFromUrl(newslist.getNewsHref());
             newsDetailList.add(newsDetail);
-            // 空值获取的数量
+            // 控制获取的数量
             if (newsDetailList.size() == newsCount) {
                 break;
             }
@@ -56,8 +56,10 @@ public class Main {
             // 从新闻详细页面获取评论链接
             String commentUrl = newsDetail.getCommentUrl();
             String newsTitle = newsDetail.getTitle();
+            String commentCount = newsDetail.getCommentCount();
+
             // 根据评论链接获取评论Json API 地址
-            List<String> commentJsonUrlList = getCommentJsonUrlListFromUrl(commentUrl);
+            List<String> commentJsonUrlList = getCommentJsonUrlListFromUrl(commentUrl, Integer.parseInt(commentCount));
             for (String commentJsonUrl : commentJsonUrlList) {
                 // 根据评论Json API地址获取对应html内容
                 String commentJsonHtml = getCommentsJsonHtmlFromUrl(commentJsonUrl);
@@ -141,7 +143,7 @@ public class Main {
         return news;
     }
 
-    public static List<String> getCommentJsonUrlListFromUrl(final String url) {
+    public static List<String> getCommentJsonUrlListFromUrl(final String url, int commentCount) {
         Launcher launcher = new Launcher();
         List<String> commentJsonUrlList = new ArrayList<>();
         try (SessionFactory factory = launcher.launch(asList("--disable-gpu", "--headless"))) {
@@ -160,10 +162,17 @@ public class Main {
                                     // 从response对象中获得url
                                     String commentJsonUrl = response.getUrl();
                                     // 正则匹配，检测网站 https://regex101.com 匹配3条约用时2ms
-                                    Pattern pattern = Pattern.compile(".*List\\?ibc.*");
+                                    Pattern pattern = Pattern.compile(".*newList\\?ibc.*");
+
                                     Matcher matcher = pattern.matcher(commentJsonUrl);
+
                                     if (matcher.find()) {
-                                        commentJsonUrlList.add(commentJsonUrl);
+                                        // 页面评论总数，防止越界需要-30
+                                        int pageCounts = commentCount-30;
+                                        for (int i=0; i<=pageCounts; i+=30) {
+                                            commentJsonUrl = commentJsonUrl.replaceFirst("offset\\=[0-9]+",""+i);
+                                            commentJsonUrlList.add(commentJsonUrl);
+                                        }
                                     }
                                 }
                             }
@@ -196,6 +205,7 @@ public class Main {
         try (SessionFactory factory = launcher.launch(asList("--disable-gpu", "--headless"))) {
             String context = factory.createBrowserContext();
             try (Session session = factory.create(context)) {
+
                 session.navigate(url);
                 // 默认超时时间是10*1000
                 session.waitDocumentReady(15 * 1000);

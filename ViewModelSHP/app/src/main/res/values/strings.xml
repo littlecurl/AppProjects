@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewModelSHP</string>
+    <string name="bt_del"> — </string>
+    <string name="bt_add"> + </string>
+    <string name="data_key">DATA_KEY</string>
+    <string name="shp_name">SHP_NAME</string>
+    <string name="bt_zero">清零</string>
+</resources>

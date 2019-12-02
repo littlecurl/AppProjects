@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.viewpager2demo.test" >
+4
+5    <uses-sdk
+5-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:5:5-74
+6        android:minSdkVersion="19"
+6-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:11:5-15:76
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:11:22-76
+11        android:functionalTest="false"
+11-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:13:22-53
+13        android:label="Tests for com.example.viewpager2demo"
+13-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:15:22-74
+14        android:targetPackage="com.example.viewpager2demo" />
+14-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:12:22-72
+15
+16    <uses-permission android:name="android.permission.REORDER_TASKS" />
+16-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:24:5-72
+16-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:24:22-69
+17
+18    <application android:debuggable="true" >
+18-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:7:5-9:19
+18-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:7:18-43
+19        <uses-library android:name="android.test.runner" />
+19-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:8:9-60
+19-->D:\GitHub\AppProjects\ViewPager2Demo\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5474298186572764383.xml:8:23-57
+20
+21        <activity
+21-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:27:9-33:20
+22            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+22-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:28:13-99
+23            android:theme="@android:style/Theme" >
+23-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:29:13-49
+24            <intent-filter>
+24-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:30:13-32:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:17-69
+25-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:25-66
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:34:9-40:20
+29            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+29-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:35:13-95
+30            android:theme="@android:style/Theme" >
+30-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:36:13-49
+31            <intent-filter>
+31-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:30:13-32:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:17-69
+32-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:25-66
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:41:9-47:20
+36            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+36-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:42:13-103
+37            android:theme="@android:style/Theme.Dialog" >
+37-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:43:13-56
+38            <intent-filter>
+38-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:30:13-32:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:17-69
+39-->[androidx.test:core:1.2.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\8b905dc169db8069fa57dc4a2866d2d4\core-1.2.0\AndroidManifest.xml:31:25-66
+40            </intent-filter>
+41        </activity>
+42    </application>
+43
+44</manifest>

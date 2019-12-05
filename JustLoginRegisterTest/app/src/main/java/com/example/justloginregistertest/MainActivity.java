@@ -1,42 +1,42 @@
 package com.example.justloginregistertest;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+
+import androidx.appcompat.app.AppCompatActivity;
 /**
  * Created by littlecurl 2018/6/24
  */
-public class MainActivity extends AppCompatActivity {
+
+/**
+ * 此类 implements View.OnClickListener 之后，
+ * 就可以把onClick事件写到onCreate()方法之外
+ * 这样，onCreate()方法中的代码就不会显得很冗余
+ */
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /**
-         * 一定 一定 一定记得加这句，而且是固定位置，在setContentView()之下
-         * 否则无论写的什么逻辑  都不会在Activity中起作用
-         */
-        ButterKnife.bind(this);
+
+        initView();
     }
 
-    @BindView(R.id.bt_main_logout)
-    Button mBtMainLogout;
+    private void initView() {
+        // 初始化控件对象
+        Button mBtMainLogout = findViewById(R.id.bt_main_logout);
+        // 绑定点击监听器
+        mBtMainLogout.setOnClickListener(this);
+    }
 
-    @OnClick({
-            R.id.bt_main_logout
-    })
-    public void onClick(View view){
-        switch (view.getId()) {
-            case R.id.bt_main_logout:
-                Intent intent = new Intent(this, loginActivity.class);
-                startActivity(intent);
-                finish();
-                break;
+    public void onClick(View view) {
+        if (view.getId() == R.id.bt_main_logout) {
+            Intent intent = new Intent(this, loginActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
 }

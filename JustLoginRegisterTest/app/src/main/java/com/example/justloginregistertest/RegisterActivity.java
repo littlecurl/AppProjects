@@ -2,30 +2,46 @@ package com.example.justloginregistertest;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+
+import androidx.appcompat.app.AppCompatActivity;
 /**
  * Created by littlecurl 2018/6/24
  */
-public class RegisterActivity extends AppCompatActivity{
+/**
+ * 此类 implements View.OnClickListener 之后，
+ * 就可以把onClick事件写到onCreate()方法之外
+ * 这样，onCreate()方法中的代码就不会显得很冗余
+ */
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private String realCode;
     private DBOpenHelper mDBOpenHelper;
+    private Button mBtRegisteractivityRegister;
+    private RelativeLayout mRlRegisteractivityTop;
+    private ImageView mIvRegisteractivityBack;
+    private LinearLayout mLlRegisteractivityBody;
+    private EditText mEtRegisteractivityUsername;
+    private EditText mEtRegisteractivityPassword1;
+    private EditText mEtRegisteractivityPassword2;
+    private EditText mEtRegisteractivityPhonecodes;
+    private ImageView mIvRegisteractivityShowcode;
+    private RelativeLayout mRlRegisteractivityBottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        ButterKnife.bind(this);
+
+        initView();
+
         mDBOpenHelper = new DBOpenHelper(this);
 
         //将验证码用图片的形式显示出来
@@ -33,34 +49,27 @@ public class RegisterActivity extends AppCompatActivity{
         realCode = Code.getInstance().getCode().toLowerCase();
     }
 
-    @BindView(R.id.rl_registeractivity_top)
-    RelativeLayout mRlRegisteractivityTop;
-    @BindView(R.id.iv_registeractivity_back)
-    ImageView mIvRegisteractivityBack;
-    @BindView(R.id.ll_registeractivity_body)
-    LinearLayout mLlRegisteractivityBody;
-    @BindView(R.id.et_registeractivity_username)
-    EditText mEtRegisteractivityUsername;
-    @BindView(R.id.et_registeractivity_password1)
-    EditText mEtRegisteractivityPassword1;
-    @BindView(R.id.et_registeractivity_password2)
-    EditText mEtRegisteractivityPassword2;
-    @BindView(R.id.et_registeractivity_phoneCodes)
-    EditText mEtRegisteractivityPhonecodes;
-    @BindView(R.id.iv_registeractivity_showCode)
-    ImageView mIvRegisteractivityShowcode;
-    @BindView(R.id.rl_registeractivity_bottom)
-    RelativeLayout mRlRegisteractivityBottom;
+    private void initView(){
+        mBtRegisteractivityRegister = findViewById(R.id.bt_registeractivity_register);
+        mRlRegisteractivityTop = findViewById(R.id.rl_registeractivity_top);
+        mIvRegisteractivityBack = findViewById(R.id.iv_registeractivity_back);
+        mLlRegisteractivityBody = findViewById(R.id.ll_registeractivity_body);
+        mEtRegisteractivityUsername = findViewById(R.id.et_registeractivity_username);
+        mEtRegisteractivityPassword1 = findViewById(R.id.et_registeractivity_password1);
+        mEtRegisteractivityPassword2 = findViewById(R.id.et_registeractivity_password2);
+        mEtRegisteractivityPhonecodes = findViewById(R.id.et_registeractivity_phoneCodes);
+        mIvRegisteractivityShowcode = findViewById(R.id.iv_registeractivity_showCode);
+        mRlRegisteractivityBottom = findViewById(R.id.rl_registeractivity_bottom);
 
-    /**
-     * 注册页面能点击的就三个地方
-     * top处返回箭头、刷新验证码图片、注册按钮
-     */
-    @OnClick({
-            R.id.iv_registeractivity_back,
-            R.id.iv_registeractivity_showCode,
-            R.id.bt_registeractivity_register
-    })
+        /**
+         * 注册页面能点击的就三个地方
+         * top处返回箭头、刷新验证码图片、注册按钮
+         */
+        mIvRegisteractivityBack.setOnClickListener(this);
+        mIvRegisteractivityShowcode.setOnClickListener(this);
+        mBtRegisteractivityRegister.setOnClickListener(this);
+    }
+
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_registeractivity_back: //返回登录页面

@@ -12,17 +12,17 @@ import java.util.ArrayList;
 
 public class DBOpenHelper extends SQLiteOpenHelper {
     /**
-     * 声明一个AndroidSDK自带的数据库变量db
+     * 声明一个数据库变量db
+     * 这个数据库即SQL Lite
+     * 是Android SDK中自带的数据库
      */
     private SQLiteDatabase db;
 
     /**
-     * 写一个这个类的构造函数，参数为上下文context，所谓上下文就是这个类所在包的路径
-     * 指明上下文，数据库名，工厂默认空值，版本号默认从1开始
-     * super(context,"db_test",null,1);
-     * 把数据库设置成可写入状态，除非内存已满，那时候会自动设置为只读模式
-     * 不过，以现如今的内存容量，估计一辈子也见不到几次内存占满的状态
-     * db = getReadableDatabase();
+     * 构造方法，参数为上下文context，所谓上下文就是这个类所在包的路径
+     * 调用父类构造器，super(context,"db_test",null,1); 指明上下文，数据库名，工厂默认空值，版本号默认从1开始
+     * db = getReadableDatabase(); 与之相似的还有一句getWritableDatabase(),可以Ctrl+单击getReadableDatabase()
+     * 点进去源码看看介绍
      */
     public DBOpenHelper(Context context){
         super(context,"db_test",null,1);

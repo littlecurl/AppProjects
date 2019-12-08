@@ -4,31 +4,37 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener{
+import androidx.appcompat.app.AppCompatActivity;
+
+/**
+ * 因为此类 implements OnClickListener
+ * 所以可以将 onClick() 方法写到 onCreate() 方法之外
+ * 避免 onCreate()方法过于冗长
+ */
+public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //根据Layout按钮id得到Java按钮对象
-        Button insert = (Button) findViewById(R.id.insert);
-        Button insert_cleardata = (Button) findViewById(R.id.insert_cleardata);
+        Button insert = findViewById(R.id.insert);
+        Button insert_cleardata = findViewById(R.id.insert_cleardata);
 
-        Button update = (Button) findViewById(R.id.update);
-        Button update_cleardata = (Button)findViewById(R.id.update_cleardata);
+        Button update = findViewById(R.id.update);
+        Button update_cleardata = findViewById(R.id.update_cleardata);
 
-        Button delete = (Button) findViewById(R.id.delete);
-        Button delete_cleardata = (Button)findViewById(R.id.delete_cleardata);
+        Button delete = findViewById(R.id.delete);
+        Button delete_cleardata = findViewById(R.id.delete_cleardata);
 
-        Button query = (Button) findViewById(R.id.query);
-        Button clearquery = (Button)findViewById(R.id.clear_query);
+        Button query = findViewById(R.id.query);
+        Button clearquery = findViewById(R.id.clear_query);
 
         //为所有按钮对象设置监听器
         insert.setOnClickListener(this);
@@ -43,34 +49,35 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         query.setOnClickListener(this);
         clearquery.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View v) {
         //因为响应点击按钮事件时要操作文本输入框中的内容
         // 所以要获取相应文本输入框的对象及其中输入内容
-        EditText insert_edittext = (EditText)findViewById(R.id.inset_edittext);
+        EditText insert_edittext = (EditText) findViewById(R.id.inset_edittext);
         String insert_data = insert_edittext.getText().toString();
 
-        EditText delete_edittext = (EditText)findViewById(R.id.delete_edittext);
+        EditText delete_edittext = (EditText) findViewById(R.id.delete_edittext);
         String delete_data = delete_edittext.getText().toString();
 
-        EditText update_before_edittext = (EditText)findViewById(R.id.update_before_edittext);
+        EditText update_before_edittext = (EditText) findViewById(R.id.update_before_edittext);
         String update_before_data = update_before_edittext.getText().toString();
-        EditText update_after_edittext = (EditText)findViewById(R.id.update_after_edittext);
+        EditText update_after_edittext = (EditText) findViewById(R.id.update_after_edittext);
         String update_after_data = update_after_edittext.getText().toString();
 
-        TextView textview = (TextView)findViewById(R.id.textview);
+        TextView textview = (TextView) findViewById(R.id.textview);
 
         //依靠DatabaseHelper的构造函数创建数据库
-        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this, "test_db",null,1);
+        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this, "test_db", null, 1);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         //根据响应Click的按钮id进行选择操作
-        switch(v.getId()){
+        switch (v.getId()) {
             //插入数据按钮
             case R.id.insert:
                 //创建存放数据的ContentValues对象
                 ContentValues values = new ContentValues();
-                values.put("name",insert_data);
+                values.put("name", insert_data);
                 //数据库执行插入命令
                 db.insert("user", null, values);
                 break;
@@ -107,13 +114,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                 //利用游标遍历所有数据对象
                 //为了显示全部，把所有对象连接起来，放到TextView中
                 String textview_data = "";
-                while(cursor.moveToNext()){
+                while (cursor.moveToNext()) {
                     String name = cursor.getString(cursor.getColumnIndex("name"));
                     textview_data = textview_data + "\n" + name;
                 }
                 textview.setText(textview_data);
-				// 关闭游标，释放资源
-				cursor.close();
+                // 关闭游标，释放资源
+                cursor.close();
                 break;
             //查询全部按钮下面的清除查询按钮
             case R.id.clear_query:

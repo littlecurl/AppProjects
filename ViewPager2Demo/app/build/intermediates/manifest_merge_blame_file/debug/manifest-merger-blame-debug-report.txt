@@ -6,47 +6,47 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+8-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+9-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:6:5-22:19
+11-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:6:5-22:19
 12        android:allowBackup="false"
-12-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:7:9-36
+12-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:7:9-36
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:8:9-43
+15-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:8:9-43
 16        android:label="@string/app_name"
-16-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:9:9-41
+16-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:9:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:10:9-54
+17-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:10:9-54
 18        android:supportsRtl="true"
-18-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:11:9-35
+18-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:11:9-35
 19        android:theme="@style/AppTheme" >
-19-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:12:9-40
+19-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:12:9-40
 20        <activity android:name="com.example.LauncherActivity" >
-20-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:9-19:20
-20-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:19-62
+20-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:9-19:20
+20-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:19-62
 21            <intent-filter>
-21-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:15:13-18:29
+21-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:15:13-18:29
 22                <action android:name="android.intent.action.MAIN" />
-22-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:17-69
-22-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:25-66
+22-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:17-69
+22-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:25-66
 23
 24                <category android:name="android.intent.category.LAUNCHER" />
-24-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:17-77
-24-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:27-74
+24-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:17-77
+24-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:27-74
 25            </intent-filter>
 26        </activity>
 27        <activity android:name="com.example.viewpagerdemo.MainActivity" />
-27-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:10-75
-27-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:20-73
+27-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:10-75
+27-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:20-73
 28        <activity android:name="com.example.viewpager2demo.MainActivity2" />
-28-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:9-76
-28-->D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:19-74
+28-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:9-76
+28-->D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:19-74
 29    </application>
 30
 31</manifest>

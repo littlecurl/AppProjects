@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -38,27 +38,27 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\littlecurl\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\df65787e67fe4b4bc0635deed9695797\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:4:5-41
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:4:5-41
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:6:5-22:19
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:6:5-22:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -68,45 +68,45 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\li
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:9:9-41
 	tools:ignore
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:13:9-48
 	android:roundIcon
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:7:9-36
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:7:9-36
 	android:theme
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.example.LauncherActivity
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:9-19:20
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:9-19:20
 	android:name
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:19-62
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:14:19-62
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:15:13-18:29
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:17:27-74
 activity#com.example.viewpagerdemo.MainActivity
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:10-75
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:10-75
 	android:name
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:20-73
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:20:20-73
 activity#com.example.viewpager2demo.MainActivity2
-ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:9-76
+ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:9-76
 	android:name
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:19-74
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml:21:19-74
 uses-sdk
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\af19d2bf9efbba5c87d98162386fe6bd\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -175,13 +175,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\littlecu
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		ADDED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\GitHub\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		ADDED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\GitHub\Android\AppProjects\ViewPager2Demo\app\src\main\AndroidManifest.xml

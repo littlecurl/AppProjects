@@ -24,7 +24,17 @@
 
 8. Android新控件ViewPager2入门示例 [ViewPager2Demo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/ViewPager2Demo.zip)
 
-   
+9. Android仿闲鱼底部导航栏 [BottomNavigationDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/BottomNavigationDemo.zip)
+
+10. Android阿里开源ARouterDemo [ARouterDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/ARouterDemo.zip)
+
+11. Android使用RecyclerView播放视频列表 [RecyclerViewDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/RecyclerViewDemo.zip)
+
+12. Android桌面图标和App名字本地化 [IcLauncherAndLocalizeTitle.zip](https://gitee.com/littlecurl/AppProjects/raw/master/IcLauncherAndLocalizeTitle.zip)
+
+    
+
+    
 
 
 

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:id="@+id/ll_pub_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_pub"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="发布闲置"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_pub_tweet">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:contentDescription="发布动弹"
+                app:srcCompat="@mipmap/ic_new_tweet" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pub_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_pub"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="信用回收"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_pub_article">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                app:srcCompat="@mipmap/ic_new_article" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pub_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_pub"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="发帖子"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_pub_blog">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                app:srcCompat="@mipmap/ic_new_blog" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_pub"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/comui_tab_post" />
+</RelativeLayout>

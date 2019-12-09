@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ android:clipChildren="false"
+ 根布局也需要这一句，否则无法显示
+android:clipChildren
+Defines whether a child is limited to draw inside of its bounds or not.
+This is useful with animations that scale the size of the children
+to more than 100% for instance. In such a case,
+this property should be set to false to allow the children
+to draw outside of their bounds.
+The default value of this property is true.
+May be a boolean value, such as "true" or "false".
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/activity_main_viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"></androidx.viewpager2.widget.ViewPager2>
+
+    <!--
+  android:clipChildren="false"
+  android:gravity="center"
+  二者结合使用，即可出现凸出效果
+
+  如果父布局加上了padding
+  则需要使用
+  android:clipToPadding="false"
+
+  -->
+    <RadioGroup
+        android:id="@+id/activity_main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/colorBottomNavigationBackground"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <!--
+android:button="@null"
+去掉Radio的圆形选择按钮
+-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Home"
+            tools:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_track"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Track"
+            tools:text="足迹" />
+
+        <LinearLayout
+            android:id="@+id/ll_fab"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_fab_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/publish" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:padding="5dp"
+                android:text="Publish"
+                android:textColor="@color/black"
+                tools:text="发布" />
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Message"
+            tools:text="消息" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Mine"
+            tools:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

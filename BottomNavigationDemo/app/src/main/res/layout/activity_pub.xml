@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/rl_main"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80000000"
+    android:background="#D9F0F0F0"
     android:fitsSystemWindows="false"
     android:orientation="vertical"
     tools:ignore="HardcodedText">
+
     <LinearLayout
         android:id="@+id/ll_pub_tweet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
         android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         tools:ignore="UseCompoundDrawables">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/bg_pub"
-            android:paddingBottom="5dp"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             android:paddingTop="2dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
             android:text="发布闲置"
             android:textColor="@color/white"
             android:textSize="12sp" />
@@ -45,8 +46,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:tint="@color/white"
                 android:contentDescription="发布动弹"
+                android:tint="@color/white"
                 app:srcCompat="@mipmap/ic_new_tweet" />
         </FrameLayout>
     </LinearLayout>
@@ -55,25 +56,25 @@
         android:id="@+id/ll_pub_article"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
         android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         tools:ignore="UseCompoundDrawables">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/bg_pub"
-            android:paddingBottom="5dp"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             android:paddingTop="2dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
             android:text="信用回收"
             android:textColor="@color/white"
             android:textSize="12sp" />
@@ -96,25 +97,25 @@
         android:id="@+id/ll_pub_blog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
         android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         tools:ignore="RtlHardcoded,UseCompoundDrawables">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/bg_pub"
-            android:paddingBottom="5dp"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             android:paddingTop="2dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
             android:text="发帖子"
             android:textColor="@color/white"
             android:textSize="12sp" />
@@ -139,7 +140,7 @@
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:contentDescription="@null"
         android:layout_marginBottom="25dp"
+        android:contentDescription="@null"
         app:srcCompat="@drawable/comui_tab_post" />
 </RelativeLayout>

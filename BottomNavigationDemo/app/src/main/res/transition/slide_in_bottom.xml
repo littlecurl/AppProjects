@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!--顶部的状态栏以及底部的导航栏不执行动画-->
+    <targets>
+        <target android:excludeId="@android:id/statusBarBackground"/>
+        <target android:excludeId="@android:id/navigationBarBackground"/>
+    </targets>
+
+    <slide android:slideEdge="bottom"
+        android:duration="1300"/>
+
+    <!--<fade />-->
+</transitionSet>

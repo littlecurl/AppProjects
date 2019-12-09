@@ -4,8 +4,6 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -32,13 +30,17 @@ import java.util.List;
  */
 public class PubActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView mBtnPub;
-    private LinearLayout mLlArticle,mLlBlog, mLlTweet;
+    private LinearLayout mLlArticle, mLlBlog, mLlTweet;
     private List<LinearLayout> mLays = new ArrayList();
     private RelativeLayout mRlMain;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*set it to be full screen*/
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_pub);
+
         initWindow();
         initViews();
     }
@@ -55,19 +57,16 @@ public class PubActivity extends AppCompatActivity implements View.OnClickListen
         getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
     }
 
-    public static void show(Context context) {
-        context.startActivity(new Intent(context, PubActivity.class));
-    }
-
     @Override
     public void onBackPressed() {
         dismiss();
     }
 
+
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(0,0);
+        overridePendingTransition(0, 0);
     }
 
     private void initViews() {
@@ -160,7 +159,7 @@ public class PubActivity extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.ll_pub_article:
                 break;
             case R.id.ll_pub_blog:

@@ -1,5 +1,6 @@
 package com.example.bottomnavigation.activity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -82,10 +83,11 @@ public class MainActivity extends AppCompatActivity {
         ivFabPublish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PubActivity.show(MainActivity.this);
+                Intent intent = new Intent(MainActivity.this,PubActivity.class);
+                startActivity(intent);
             }
         });
-        // 四个RadioButton初始化图片
+        // 四个RadioButton初始化图片、文字
         Drawable dbHome = getResources().getDrawable(R.drawable.selector_home);
         dbHome.setBounds(0, 0, UIUtils.dipTopx(this, 25), UIUtils.dipTopx(this, 25));
         rbHome.setCompoundDrawables(null, dbHome, null, null);

@@ -1,9 +1,5 @@
 package com.example.slidedemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityOptionsCompat;
-import androidx.core.util.Pair;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +19,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, VerticalActivity.class);
-                Bundle bundle = gettransitionActivityOptionsBundle(MainActivity.this);
+                Bundle bundle = getTransitionActivityOptionsBundle(MainActivity.this);
                 startActivity(i,bundle);
             }
         });
@@ -33,7 +29,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, HorizontalActivity.class);
-                Bundle bundle = gettransitionActivityOptionsBundle(MainActivity.this);
+                Bundle bundle = getTransitionActivityOptionsBundle(MainActivity.this);
                 startActivity(i,bundle);
             }
         });

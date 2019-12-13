@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide
+        android:duration="1500"
+        android:slideEdge="right">
+        <targets>
+            <!--除了状态栏、导航栏-->
+            <target android:excludeId="@android:id/statusBarBackground" />
+            <target android:excludeId="@android:id/navigationBarBackground" />
+            <!--只针对状态栏、导航栏-->
+            <!--<target android:targetId="@android:id/statusBarBackground"/>-->
+            <!--<target android:targetId="@android:id/navigationBarBackground"/>-->
+        </targets>
+    </slide>
+</transitionSet>

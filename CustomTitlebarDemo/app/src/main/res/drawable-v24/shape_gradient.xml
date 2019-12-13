@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+上 start
+下 end
+从上到下，颜色梯度变化
+-->
+    <gradient
+        android:startColor="#FF366CFD"
+        android:endColor="#FF233CFD"
+        android:type="linear" />
+</shape>

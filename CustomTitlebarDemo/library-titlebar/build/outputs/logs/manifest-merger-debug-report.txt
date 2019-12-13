@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+	package
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:1-12:12
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:5:5-10:19
+	android:supportsRtl
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:8:9-35
+	android:label
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:7:9-41
+	android:allowBackup
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml:6:9-35
+uses-sdk
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		ADDED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml
+		INJECTED from D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\src\main\AndroidManifest.xml

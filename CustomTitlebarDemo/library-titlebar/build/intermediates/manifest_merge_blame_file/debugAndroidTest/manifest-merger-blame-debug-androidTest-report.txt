@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wuhenzhizao.titlebar.test" >
+4
+5    <uses-sdk
+5-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:5:5-74
+6        android:minSdkVersion="15"
+6-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:11:5-15:79
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:11:22-76
+11        android:functionalTest="false"
+11-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:13:22-53
+13        android:label="Tests for com.wuhenzhizao.titlebar.test"
+13-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:15:22-77
+14        android:targetPackage="com.wuhenzhizao.titlebar.test" />
+14-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:12:22-75
+15
+16    <application
+16-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:7:5-9:19
+17        android:allowBackup="true"
+17-->[__tested_artifact__::library-titlebar] D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] C:\Users\littlecurl\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+19-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:7:18-43
+20        android:label="@string/app_name"
+20-->[__tested_artifact__::library-titlebar] D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-41
+21        android:supportsRtl="true" >
+21-->[__tested_artifact__::library-titlebar] D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
+22        <uses-library android:name="android.test.runner" />
+22-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:8:9-60
+22-->D:\Workspace\Android\CustomTitlebarDemo\library-titlebar\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2392236171999578279.xml:8:23-57
+23    </application>
+24
+25</manifest>

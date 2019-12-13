@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_ll_qrcode"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+
+    <ImageView
+        android:id="@+id/left_iv_qrcode"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/qr_code" />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="1dp"-->
+    <!--        android:text="扫一扫"-->
+    <!--        android:textColor="#666666"-->
+    <!--        android:textSize="9dp" />-->
+</LinearLayout>

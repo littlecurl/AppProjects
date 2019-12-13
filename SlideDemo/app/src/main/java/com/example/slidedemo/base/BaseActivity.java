@@ -18,7 +18,7 @@ import com.example.slidedemo.TransitionHelper;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-    protected Bundle gettransitionActivityOptionsBundle(Activity activity) {
+    protected Bundle getTransitionActivityOptionsBundle(Activity activity) {
         final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants(activity, true);
         ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, pairs);
         return transitionActivityOptions.toBundle();

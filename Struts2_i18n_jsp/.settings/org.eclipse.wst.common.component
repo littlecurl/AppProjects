@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Struts2_i18n_jsp">
-        <wb-resource deploy-path="/" source-path="/WebRoot"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Struts2_i18n_jsp"/>
-        <property name="java-output-path" value="/Struts2_i18n_jsp/build/classes"/>
-    </wb-module>
-</project-modules>

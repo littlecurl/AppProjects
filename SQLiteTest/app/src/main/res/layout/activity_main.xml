@@ -7,25 +7,53 @@
     android:layout_marginBottom="50dp"
     >
 
+    <TextView
+        android:id="@+id/tv_live_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:ems="10"
+            android:hint="请输入实时文本"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv_live"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:text="👈实时展示文本（和数据库操作没关系）" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <EditText
-        android:id="@+id/inset_edittext"
+        android:id="@+id/et_inset"
         android:layout_width="0dp"
         android:layout_weight="5"
         android:layout_height="wrap_content"
         android:hint="请输入要插入的数据"
         android:textColorHint="#CCCCCC"/>
     <Button
-        android:id="@+id/insert"
+        android:id="@+id/bt_insert"
         android:layout_width="0dp"
         android:layout_weight="2"
         android:layout_height="wrap_content"
         android:text="执行插入"/>
     <Button
-        android:id="@+id/insert_cleardata"
+        android:id="@+id/bt_clear_insert"
         android:layout_width="0dp"
         android:layout_weight="2"
         android:layout_height="wrap_content"
@@ -35,27 +63,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/update_before_edittext"
+            android:id="@+id/et_before_update"
             android:layout_width="0dp"
             android:layout_weight="2.5"
             android:layout_height="wrap_content"
             android:hint="请输入更新前的内容"
             android:textColorHint="#CCCCCC"/>
         <EditText
-            android:id="@+id/update_after_edittext"
+            android:id="@+id/et_after_update"
             android:layout_width="0dp"
             android:layout_weight="2.5"
             android:layout_height="wrap_content"
             android:hint="请输入更新后的内容"
             android:textColorHint="#CCCCCC"/>
         <Button
-            android:id="@+id/update"
+            android:id="@+id/bt_update"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="执行更新"/>
         <Button
-            android:id="@+id/update_cleardata"
+            android:id="@+id/bt_clear_update"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
@@ -66,37 +94,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/delete_edittext"
+            android:id="@+id/et_delete"
             android:layout_width="0dp"
             android:layout_weight="5"
             android:layout_height="wrap_content"
             android:hint="请输入要删除的内容"
             android:textColorHint="#CCCCCC"/>
         <Button
-            android:id="@+id/delete"
+            android:id="@+id/bt_delete"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="执行删除"/>
         <Button
-            android:id="@+id/delete_cleardata"
+            android:id="@+id/bt_clear_delete"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
             android:text="清除" />
     </LinearLayout>
     <Button
-        android:id="@+id/query"
+        android:id="@+id/bt_query"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="查询所有"/>
     <Button
-        android:id="@+id/clear_query"
+        android:id="@+id/bt_clear_query"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="清除查询"/>
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/tv_query_result"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginVertical="50dp"

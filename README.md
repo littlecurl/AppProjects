@@ -32,6 +32,7 @@
 
 12. Android桌面图标和App名字本地化 [IcLauncherAndLocalizeTitle.zip](https://gitee.com/littlecurl/AppProjects/raw/master/IcLauncherAndLocalizeTitle.zip)
 
+13. Android解决滑动冲突 [SlidingConflictDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/SlidingConflictDemo.zip)
     
 
     

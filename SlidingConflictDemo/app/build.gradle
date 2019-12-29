@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "cn.edu.heuet.slidingconflictdemo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // viewpager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    // 基础框架-主要使用XRecyclerView实现addHeaderView
+    implementation 'com.youth.xframe:xframe:1.1.2'
+    // SwipeRefreshLayout下拉刷新
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    // Banner轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    // 主要使用ViewModel为ViewPager2提供List<Fragment>数据
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    // Glide图片加载
+    //noinspection GradleDependency
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    // 卡片布局
+    implementation 'androidx.cardview:cardview:1.0.0'
+    // Tablayout
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+}

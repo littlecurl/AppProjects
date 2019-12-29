@@ -1,5 +1,6 @@
 package cn.edu.recyclerviewdemo;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -64,15 +65,14 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> 
         return holder;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         // 数据与视图之间进行绑定
-        if (viewHolder instanceof  ViewHolder){
-            viewHolder.videoname.setText("视频"+position);
-            viewHolder.videoview.setVideoURI(Uri.parse(mVideoPathList.get(position)));
-            viewHolder.videoview.seekTo(10);
-            viewHolder.videoview.pause();
-        }
+        viewHolder.videoname.setText("视频"+position);
+        viewHolder.videoview.setVideoURI(Uri.parse(mVideoPathList.get(position)));
+        viewHolder.videoview.seekTo(10);
+        viewHolder.videoview.pause();
     }
 
     @Override

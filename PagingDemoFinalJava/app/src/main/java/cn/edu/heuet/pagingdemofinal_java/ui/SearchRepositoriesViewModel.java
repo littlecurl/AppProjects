@@ -38,39 +38,31 @@ public class SearchRepositoriesViewModel extends AndroidViewModel {
         this.githubDataSource = githubDataSource;
     }
 
-    /*
-      SearchRepositoriesActivity.onCreate()中调用
-     */
+    // Activity.onCreate()中调用
+    // 将用户输入的String转为LiveDat<String>
     public void searchRepo(String queryString) {
         queryLiveData.postValue(queryString);
     }
 
-    /*
-
-     */
+    // 传入LiveData<String> 拿到查询结果
     private LiveData<RepoSearchResult> repoResult = Transformations.map(
             queryLiveData,
             it -> githubDataSource.search(it)
     );
 
-    /*
-        取出RepoSearchResult中的PagedList
-     */
+    // 取出repoResult中的PagedList
     public LiveData<PagedList<Repo>> repos = Transformations.switchMap(
             repoResult,
             it -> it.data
     );
-    /*
-        取出RepoSearchResult中的networkErrors
-   */
+
+    // 取出repoResult中的networkErrors
     public LiveData<String> networkErrors = Transformations.switchMap(
             repoResult,
             it -> it.networkErrors
     );
 
-    /*
-        SearchRepositoriesActivity.onSaveInstanceState()中调用
-     */
+    // Activity.onSaveInstanceState()中调用
     public String lastQueryValue() {
         return queryLiveData.getValue();
     }

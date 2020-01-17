@@ -29,6 +29,7 @@ public class RepoBoundaryCallback extends PagedList.BoundaryCallback<Repo> {
     // avoid triggering multiple requests in the same time
     public static boolean isRequestInProgress = false;
 
+    public static boolean hasMore = true;
 
     // LiveData of network errors.
     public static MutableLiveData<String> networkErrors = new MutableLiveData<String>();

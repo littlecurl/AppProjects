@@ -1,14 +1,13 @@
 package cn.edu.heuet.pagingdemofinal_java.api;
 
-import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.List;
 
 import cn.edu.heuet.pagingdemofinal_java.data.RepoBoundaryCallback;
 import cn.edu.heuet.pagingdemofinal_java.db.GithubLocalCache;
 import cn.edu.heuet.pagingdemofinal_java.model.Repo;
+import cn.edu.heuet.pagingdemofinal_java.model.RepoSearchResponse;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;

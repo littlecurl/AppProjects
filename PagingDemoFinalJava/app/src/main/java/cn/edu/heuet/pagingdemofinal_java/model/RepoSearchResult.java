@@ -8,7 +8,10 @@ import androidx.paging.PagedList;
  * @Author littlecurl
  * @Date 2020/1/8 10:04
  * @Version 1.0.0
- * @Description TODO
+ * @Description 注意和RepoSearchResponse的区别
+ *
+ * RepoSearchResponse 是为了Json反序列化而写的
+ * 这里是为了返回给UI使用PagedList、networkErrors数据而写的
  */
 public class RepoSearchResult {
     public LiveData<PagedList<Repo>> data;

@@ -15,14 +15,12 @@ import java.util.List;
 
 public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapter.ViewHolder> {
 
-    private Context context;
     private List<Integer> integerList;
 
     RecyclerviewAdapter() {
     }
 
-    RecyclerviewAdapter(Context context, List<Integer> integerList) {
-        this.context = context;
+    RecyclerviewAdapter(List<Integer> integerList) {
         this.integerList = integerList;
     }
 
@@ -32,7 +30,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_for_viewpager2,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_for_viewpager2,parent,false);
         return new ViewHolder(view);
     }
 
@@ -55,7 +53,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context,
+                Toast.makeText(v.getContext(),
                         "这里是点击每一行item的响应事件"+position,
                         Toast.LENGTH_SHORT)
                         .show();

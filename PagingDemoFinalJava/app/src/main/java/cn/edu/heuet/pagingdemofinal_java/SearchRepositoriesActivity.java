@@ -65,6 +65,7 @@ public class SearchRepositoriesActivity extends AppCompatActivity {
         // add dividers between RecyclerView's row items
         DividerItemDecoration decoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         list.addItemDecoration(decoration);
+        // 初始化适配器
         initAdapter();
         String query = null;
         if (savedInstanceState != null) {
@@ -73,6 +74,7 @@ public class SearchRepositoriesActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(query)) {
             query = DEFAULT_QUERY;
         }
+        // 进行搜索
         viewModel.searchRepo(query);
         initSearch(query);
     }
@@ -113,7 +115,6 @@ public class SearchRepositoriesActivity extends AppCompatActivity {
     }
 
     private void initSearch(String query) {
-
         search_repo.setText(query);
         // 软键盘回车键
         search_repo.setOnEditorActionListener(new TextView.OnEditorActionListener() {

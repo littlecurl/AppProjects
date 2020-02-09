@@ -1,13 +1,13 @@
 package cn.edu.heuet.pagingdemofinal_java.api;
 
-import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.List;
 
+import cn.edu.heuet.pagingdemofinal_java.data.RepoBoundaryCallback;
 import cn.edu.heuet.pagingdemofinal_java.db.GithubLocalCache;
 import cn.edu.heuet.pagingdemofinal_java.model.Repo;
+import cn.edu.heuet.pagingdemofinal_java.model.RepoSearchResponse;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
@@ -18,6 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import static cn.edu.heuet.pagingdemofinal_java.config.ConstantConfig.BASE_URL;
 import static cn.edu.heuet.pagingdemofinal_java.config.ConstantConfig.IN_QUALIFIER;
+import static cn.edu.heuet.pagingdemofinal_java.config.ConstantConfig.NETWORK_PAGE_SIZE;
 
 /**
  * Github API communication setup via Retrofit.
@@ -85,6 +86,13 @@ public class GitHubClient {
                         Log.d(TAG, "got a response " + response);
                         if (response.isSuccessful()) {
                             List<Repo> repos = response.body().items;
+                            if (repos.size() == NETWORK_PAGE_SIZE){
+                                RepoBoundaryCallback.hasMore = true;
+                            }
+                            if (!RepoBoundaryCallback.hasMore){
+                                Log.d(TAG,"NO MORE");
+                                return;
+                            }
                             // 成功回调
                             OnResponse onResponse = new OnResponseImpl(cache);
                             onResponse.onSuccess(repos);

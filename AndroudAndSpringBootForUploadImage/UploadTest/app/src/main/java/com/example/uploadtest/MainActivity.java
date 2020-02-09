@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 0x1 && resultCode == RESULT_OK) {
             if (data != null) {
                 try {
-                    // 获取圖片URI
+                    // 获取图片URI
                     Uri uri = data.getData();
                     // 将URI转换为路径：
                     String[] proj = {MediaStore.Images.Media.DATA};

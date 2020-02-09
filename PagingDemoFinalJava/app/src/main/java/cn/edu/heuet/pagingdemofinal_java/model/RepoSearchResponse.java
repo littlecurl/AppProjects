@@ -26,5 +26,5 @@ public class RepoSearchResponse {
     public List<Repo> items = new ArrayList<>();
 
     @SerializedName("incomplete_results")
-    public int incomplete_results = 0;
+    public boolean incomplete_results = false;
 }

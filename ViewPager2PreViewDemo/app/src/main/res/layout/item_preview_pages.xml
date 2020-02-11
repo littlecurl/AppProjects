@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/halfPageMargin"
+    android:layout_marginRight="@dimen/halfPageMargin"
+    android:background="#0C2962"
+    android:padding="6dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/jetpack_logo" />

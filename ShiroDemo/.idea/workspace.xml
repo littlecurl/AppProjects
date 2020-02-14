@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d55c295-8b91-474a-9938-e4f83c5990f5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Users\littlecurl\.m2\repository" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xn8iPZkyONmBJHusTsyKYsn5t9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\littlecurl\Desktop\ShiroDemo\src\test\java\org\example\extension" />
+      <recent name="C:\Users\littlecurl\Desktop\ShiroDemo\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\littlecurl\Desktop\ShiroDemo\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EncryptPasswordTest.encryptPasswordTest">
+    <configuration name="CustomRealmTest.customRealmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShiroDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.base.customrealm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.base.customrealm" />
+      <option name="MAIN_CLASS_NAME" value="org.example.base.customrealm.CustomRealmTest" />
+      <option name="METHOD_NAME" value="customRealmTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncryptPasswordTest.encryptPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShiroDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.extension.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.extension" />
+      <option name="MAIN_CLASS_NAME" value="org.example.extension.EncryptPasswordTest" />
+      <option name="METHOD_NAME" value="encryptPasswordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-XX:+UnlockCommercialFeatures" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IniRealmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShiroDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.base" />
+      <option name="MAIN_CLASS_NAME" value="org.example.base.IniRealmTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IniRealmTest.initRealmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShiroDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.base.customrealm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.base" />
+      <option name="MAIN_CLASS_NAME" value="org.example.base.IniRealmTest" />
+      <option name="METHOD_NAME" value="initRealmTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCRealmTest.jdbcRealmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ShiroDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.base.customrealm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.base" />
+      <option name="MAIN_CLASS_NAME" value="org.example.base.JDBCRealmTest" />
+      <option name="METHOD_NAME" value="jdbcRealmTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CustomRealmTest.customRealmTest" />
+      <item itemvalue="JUnit.EncryptPasswordTest.encryptPasswordTest" />
+      <item itemvalue="JUnit.IniRealmTest" />
+      <item itemvalue="JUnit.IniRealmTest.initRealmTest" />
+      <item itemvalue="JUnit.JDBCRealmTest.jdbcRealmTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EncryptPasswordTest.encryptPasswordTest" />
+        <item itemvalue="JUnit.IniRealmTest.initRealmTest" />
+        <item itemvalue="JUnit.IniRealmTest" />
+        <item itemvalue="JUnit.CustomRealmTest.customRealmTest" />
+        <item itemvalue="JUnit.JDBCRealmTest.jdbcRealmTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:shiro@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:shiro@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@b970abd" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d55c295-8b91-474a-9938-e4f83c5990f5" name="Default Changelist" comment="" />
+      <created>1581670624843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581670624843</updated>
+      <workItem from="1581670627852" duration="11961000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="327" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581684088236">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="327" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1468.864@0.0.1468.864" timestamp="1581684088236" />
+    <state x="477" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581676435707">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="477" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1468.864@0.0.1468.864" timestamp="1581676435707" />
+    <state x="540" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1581680368524">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="540" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1468.864@0.0.1468.864" timestamp="1581680368524" />
+    <state x="515" y="165" key="FileChooserDialogImpl" timestamp="1581684460764">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="515" y="165" key="FileChooserDialogImpl/0.0.1468.864@0.0.1468.864" timestamp="1581684460764" />
+    <state width="1425" height="484" key="GridCell.Tab.0.bottom" timestamp="1581685631821">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.0.bottom/0.0.1468.864@0.0.1468.864" timestamp="1581685631821" />
+    <state width="1425" height="484" key="GridCell.Tab.0.center" timestamp="1581685631821">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.0.center/0.0.1468.864@0.0.1468.864" timestamp="1581685631821" />
+    <state width="1425" height="484" key="GridCell.Tab.0.left" timestamp="1581685631821">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.0.left/0.0.1468.864@0.0.1468.864" timestamp="1581685631821" />
+    <state width="1425" height="484" key="GridCell.Tab.0.right" timestamp="1581685631821">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.0.right/0.0.1468.864@0.0.1468.864" timestamp="1581685631821" />
+    <state width="1425" height="484" key="GridCell.Tab.1.bottom" timestamp="1581685631822">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.1.bottom/0.0.1468.864@0.0.1468.864" timestamp="1581685631822" />
+    <state width="1425" height="484" key="GridCell.Tab.1.center" timestamp="1581685631822">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.1.center/0.0.1468.864@0.0.1468.864" timestamp="1581685631822" />
+    <state width="1425" height="484" key="GridCell.Tab.1.left" timestamp="1581685631821">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.1.left/0.0.1468.864@0.0.1468.864" timestamp="1581685631821" />
+    <state width="1425" height="484" key="GridCell.Tab.1.right" timestamp="1581685631822">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state width="1425" height="484" key="GridCell.Tab.1.right/0.0.1468.864@0.0.1468.864" timestamp="1581685631822" />
+    <state x="456" y="174" width="540" height="524" key="StructurePopup" timestamp="1581682480295">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="456" y="174" width="540" height="524" key="StructurePopup/0.0.1468.864@0.0.1468.864" timestamp="1581682480295" />
+    <state x="391" y="197" key="run.anything.popup" timestamp="1581681140038">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="391" y="197" key="run.anything.popup/0.0.1468.864@0.0.1468.864" timestamp="1581681140038" />
+    <state x="391" y="86" width="670" height="676" key="search.everywhere.popup" timestamp="1581678920161">
+      <screen x="0" y="0" width="1468" height="864" />
+    </state>
+    <state x="391" y="86" width="670" height="676" key="search.everywhere.popup/0.0.1468.864@0.0.1468.864" timestamp="1581678920161" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/base/customrealm/CustomRealmTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/base/customrealm/CustomRealm.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/base/customrealm/CustomRealm.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

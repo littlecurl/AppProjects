@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.maplocationdemo"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["libs-baidu", "libs-gaode", "libs-tencent"]
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('libs-baidu/BaiduLBS_Android.jar')
+    implementation files('libs-gaode/AMap_Location_V5.2.0_20200915.jar')
+    implementation files('libs-gaode/AMap_Search_V7.6.0_20200819.jar')
+    implementation files('libs-tencent/TencentMapSDK_Raster_v_1.3.3.1.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.2.8'
+    implementation 'com.google.android.gms:play-services:4.0.30'
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

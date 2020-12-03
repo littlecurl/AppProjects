@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_locationMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_batterySaving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/battery_saving" />
+
+        <RadioButton
+            android:id="@+id/rb_deviceSensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/device_sensors" />
+
+        <RadioButton
+            android:id="@+id/rb_hightAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/hight_accuracy" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rg_locationMode">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interval" />
+
+        <EditText
+            android:id="@+id/et_interval"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="@string/defaultInteval"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_timeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_interval">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/httpTimeout" />
+
+        <EditText
+            android:id="@+id/et_httpTimeout"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="@string/defaultHttpTimeout"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_onceLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_timeout">
+
+        <CheckBox
+            android:id="@+id/cb_onceLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_once" />
+
+        <CheckBox
+            android:id="@+id/cb_gpsFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gpsFirst" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_regeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_onceLocation">
+
+        <CheckBox
+            android:id="@+id/cb_needAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/needAddress" />
+
+        <CheckBox
+            android:id="@+id/cb_cacheAble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cacheAble" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_regeo">
+
+        <CheckBox
+            android:id="@+id/cb_onceLastest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onceLastest" />
+        <CheckBox
+            android:id="@+id/cb_sensorAble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/useSensor" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_adv">
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geoLanguage" />
+        <RadioGroup
+            android:id="@+id/rg_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_languageDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="默认" />
+
+            <RadioButton
+                android:id="@+id/rb_languageZH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中文" />
+
+            <RadioButton
+                android:id="@+id/rb_languageEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英文" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

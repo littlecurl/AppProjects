@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs-gaode/AMap_Search_V7.6.0_20200819.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs-gaode/AMap_Search_V7.6.0_20200819.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

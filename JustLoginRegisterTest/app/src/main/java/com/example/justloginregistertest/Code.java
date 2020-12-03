@@ -19,14 +19,14 @@ public class Code {
      *                数字 6 和 字母 b
      *                数字 9 和 字母 q
      *                字母 c C 和 G
-     *                字母 t T（经常和随机线混在一起看不清）
+     *                字母 t （经常和随机线混在一起看不清）
      */
     private static final char[] CHARS = {
             '2', '3', '4', '5',  '7', '8',
             'a',  'd', 'e', 'f', 'g', 'h', 'j', 'k', 'm',
             'n', 'p',  'r', 's',  'u', 'v', 'w', 'x', 'y', 'z',
             'A', 'B',  'D', 'E', 'F',  'H',  'J', 'K', 'M',
-            'N', 'P', 'Q', 'R', 'S', 'U', 'V', 'W', 'X', 'Y', 'Z'
+            'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
     };
 
     private static Code bmpCode;
@@ -87,8 +87,10 @@ public class Code {
         for (int i = 0; i < line_number; i++) {
             drawLine(c, paint);
         }
+
+//        c.save( Canvas.ALL_SAVE_FLAG );//保存
         c.save();//保存
-        c.restore();
+        c.restore();//
         return bp;
     }
 

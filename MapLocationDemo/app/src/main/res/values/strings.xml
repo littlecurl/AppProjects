@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">MapLocationDemo</string>
+
+    <string name="title_main">高德定位SDK功能展示</string>
+
+    <string name="title_location">获取定位数据</string>
+    <string name="location">获取定位数据</string>
+    <string name="location_dec">调用定位接口获取定位数据</string>
+
+    <string name="title_geoFence">地理围栏</string>
+    <string name="geoFence">地理围栏</string>
+    <string name="geoFence_dec">展示地理围栏功能</string>
+
+    <string name="roundGeoFence">圆形地理围栏</string>
+    <string name="roundGeoFence_dec">展示圆形地理围栏</string>
+
+    <string name="polygonGeoFence">多边形地理围栏</string>
+    <string name="polygonGeoFence_dec">展示多边形地理围栏</string>
+
+    <string name="keywordGeoFence">关键字地理围栏</string>
+    <string name="keywordGeoFence_dec">展示关键字地理围栏</string>
+
+    <string name="nearbyGeoFence">周边地理围栏</string>
+    <string name="nearbyGeoFence_dec">展示周边地理围栏</string>
+
+    <string name="districtGeoFence">行政区划地理围栏</string>
+    <string name="districtGeoFence_dec">展示行政区划地理围栏</string>
+
+    <string name="multipleGeoFence">综合展示</string>
+    <string name="multipleGeoFence_dec">综合展示地理围栏的功能</string>
+
+
+    <string name="oldGeoFence">旧版地理围栏</string>
+    <string name="oldGeoFence_dec">旧版地理围栏，不建议使用</string>
+
+
+    <string name="title_assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation_dec">展示H5辅助定位功能</string>
+
+    <string name="title_tools">地图计算工具</string>
+    <string name="tools">地图计算工具</string>
+    <string name="tools_dec">坐标转换等功能演示</string>
+
+    <string name="title_lastLocation">获取最后一次位置</string>
+    <string name="lastLocation">获取最后一次位置</string>
+    <string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+
+
+    <string name="title_alarmCPU">定时唤起CPU</string>
+    <string name="alarmCPU">定时唤起cpu</string>
+    <string name="alarmCPU_dec">通过一个闹钟程序后台定时唤起cpu</string>
+
+    <string name="title_errorCode">错误码说明</string>
+    <string name="errorCode">错误码说明</string>
+    <string name="errorCode_dec">错误码说明以及对应的解决方法</string>
+
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+    <string name="wifiScan">开启wifi扫描</string>
+
+    <string name="geoLanguage">逆地理语言</string>
+
+
+    <string name="alarmInterval">唤醒周期(s)</string>
+
+    <string name="startLocation">高德地图 · 开始定位</string>
+    <string name="stopLocation">停止定位</string>
+
+    <string name="fenceRadius">围栏半径</string>
+    <string name="meter">米</string>
+    <string name="activatesAction">触发条件</string>
+    <string name="alertIn">进入</string>
+    <string name="alertOut">离开</string>
+    <string name="alertStated">停留</string>
+    <string name="addFence">添加围栏</string>
+    <string name="removeFence">移除围栏</string>
+
+    <string name="hideOption">隐藏设置</string>
+    <string name="showOption">显示设置</string>
+
+    <string name="showList">显示列表</string>
+    <string name="hideList">隐藏列表</string>
+
+    <string name="fence_round">圆形围栏</string>
+    <string name="fence_polygon">多边形</string>
+    <string name="fence_keyword">关键字围栏</string>
+    <string name="fence_nearby">周边围栏</string>
+    <string name="fence_district">行政区划围栏</string>
+
+    <string name="getLastLocation">获取最后位置</string>
+
+    <string name="startAssistantLocation">启动H5辅助定位</string>
+    <string name="stopAssistantLocation">停止H5辅助定位</string>
+    <string name="urlLocation">浏览器定位</string>
+    <string name="assistantLocationInfo">辅助定位已经启动，请点击模拟浏览器请求或者在浏览器中输入http://127.0.0.1:43689/进行测试</string>
+
+    <string name="coordinateConvert">坐标转换</string>
+    <string name="checkIsChina">位置区域判断</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="locationPurpose">场景定位</string>
+    <string name="locationPurpose_dec">展示根据场景进行定位，设置场景后SDK内部会帮助设置相关属性</string>
+
+    <string name="signIn">签到</string>
+    <string name="signInPurpose">签到场景</string>
+    <string name="signInPurpose_dec">只进行一次定位返回最接近真实位置的定位结果（定位速度可能会延迟1-3s)</string>
+
+    <string name="transportPurpose">出行场景</string>
+    <string name="transportPurpose_dec">高精度连续定位，适用于有户内外切换的场景，GPS和网络定位相互切换，GPS定位成功之后网络定位不再返回，GPS断开之后一段时间才会返回网络结果</string>
+
+    <string name="sportPurpose">运动场景</string>
+    <string name="sportPurpose_dec">高精度连续定位，适用于有户内外切换的场景，GPS和网络定位相互切换，GPS定位成功之后网络定位不再返回，GPS断开之后一段时间才会返回网络结果</string>
+
+
+    <string name="title_locationBackground">后台定位示例</string>
+    <string name="locationBackground">后台定位</string>
+    <string name="locationBackground_dec">Android 8.0后台定位示例</string>
+
+    <string name="enableBackgroundLocation">开启后台定位</string>
+    <string name="disableBackgroundLocation">关闭后台定位</string>
+
+    <string name="errorCodeInfo">
+	    0	定位成功。	可以在定位回调里判断定位返回成功后再进行业务逻辑运算\n
+	    1	一些重要参数为空，如context；	请对定位传递的参数进行非空判断\n
+	    2	定位失败，由于仅扫描到单个wifi，且没有基站信息。	请重新尝试\n
+	    3	获取到的请求参数为空，可能获取过程中出现异常。	请对所连接网络进行全面检查，请求可能被篡改\n
+	    4	请求服务器过程中的异常，多为网络情况差，链路不通导致	请检查设备网络是否通畅\n
+	    5	返回的XML格式错误，解析失败。	请稍后再试\n
+	    6	定位服务返回定位失败。	请将errorDetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    7	KEY鉴权失败。	请仔细检查key绑定的sha1值与apk签名sha1值是否对应，或通过高频问题查找相关解决办法\n
+	    8	Android exception常规错误	请将errordetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    9	定位初始化时出现异常。	请重新启动定位\n
+	    10	定位客户端启动失败。	请检查AndroidManifest.xml文件是否配置了APSService定位服务\n
+	    11	定位时的基站信息错误。	请检查是否安装SIM卡，设备很有可能连入了伪基站网络\n
+	    12	缺少定位权限。	请在设备的设置中开启app的定位权限\n
+	    13	定位失败，由于设备未开启WIFI模块或未插入SIM卡，且GPS当前不可用。 建议开启设备的WIFI模块，并将设备中插入一张可以正常工作的SIM卡，或者检查GPS是否开启；如果以上都内容都确认无误，请您检查App是否被授予定位权限\n
+	    14  GPS 定位失败，由于设备当前 GPS 状态差。 建议持设备到相对开阔的露天场所再次尝试\n
+	    15	定位结果被模拟导致定位失败。 如果您希望位置被模拟，请通过setMockEnable(true);方法开启允许位置模拟\n
+	    16 	当前POI检索条件、行政区划检索条件下，无可用地理围栏。 建议调整检索条件后重新尝试，例如调整POI关键字，调整POI类型，调整周边搜区域，调整行政区关键字等\n
+	    17 	相同的地理围栏已经存在，无需重复添加\n
+	    18	飞行模式下关闭了WIFI开关，请关闭飞行模式或者打开WIFI开关\n
+	    19	没有检查到SIM卡，并且关闭了WIFI开关，请打开WIFI开关或者插入SIM卡\n
+	</string>
+
+    <string name="locDiagnose_title">定位诊断组件</string>
+    <string name="locDiagnose_desc">演示定位诊断组件</string>
+    <string name="locDiagnose_detail">
+		定位诊断组件，检查定位的必要条件，并给出建议。\n
+		定位诊断组件代码已上传到示例中心，git地址：https://github.com/amap-demo/android-location-diagnose.git
+	</string>
+    <string name="startDiagnose">开始诊断</string>
+</resources>

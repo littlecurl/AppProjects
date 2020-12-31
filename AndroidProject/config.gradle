@@ -1,0 +1,40 @@
+// 通用配置
+android {
+
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionName '1.0'
+        versionCode 10
+    }
+
+    // 支持 Java JDK 8
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 设置存放 so 文件的目录
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    // 开启 DataBinding
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    // 依赖 libs 目录下所有 jar 包
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // 依赖 libs 目录下所有 aar 包
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+
+    // 谷歌兼容库：https://developer.android.google.cn/jetpack/androidx/releases/appcompat?hl=zh-cn
+    implementation 'androidx.appcompat:appcompat:1.3.0-alpha02'
+    implementation 'com.google.android.material:material:1.3.0-alpha04'
+}

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            // ZipAlign优化, Google Play 强制要求，
+            // 可以让安装包中的资源按4字节对齐，这样可以减少应用在运行时的内存消耗
+            zipAlignEnabled true
+            // 是否混淆
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appcompat"
+    //使用retrofit的依赖包
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit2AdapterRxjava"
+
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid"
+    //OkHttp的依赖包
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp"
+    //Gson序列化反序列化的依赖包
+    implementation "com.google.code.gson:gson:$rootProject.ext.gson"
+    //磁盘缓存的依赖包
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+
+}
+
+

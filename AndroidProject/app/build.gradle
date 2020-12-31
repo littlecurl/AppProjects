@@ -1,0 +1,181 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: '../config.gradle'
+apply from: 'proguard.gradle'
+
+android {
+
+    defaultConfig {
+
+        // 无痛修改包名（推荐使用第二种方案）：https://www.jianshu.com/p/17327e191d2e
+        applicationId 'cn.edu.heuet.shaohua'
+
+        // 仅保留中文语种的资源
+        resConfigs 'zh'
+
+        // 仅保留 xxhdpi 图片资源（目前主流分辨率 1920 * 1080）
+        resConfig 'xxhdpi'
+
+        // 仅保留两种架构的 so 库，根据 Bugly 统计得出
+        ndk {
+            // armeabi：万金油架构平台（占用率：0%）
+            // armeabi-v7a：曾经主流的架构平台（占用率：10%）
+            // arm64-v8a：目前主流架构平台（占用率：90%）
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        // 混淆配置
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-app.pro'
+    }
+
+    // APK 签名的那些事：https://www.jianshu.com/p/a1f8e5896aa2
+    signingConfigs {
+        config {
+            storeFile file(StoreFile)
+            storePassword StorePassword
+            keyAlias KeyAlias
+            keyPassword KeyPassword
+        }
+    }
+
+    buildTypes {
+        // 这里的配置最终会出现在 BuildConfig 中：https://www.cnblogs.com/zhujiabin/p/6874448.html
+        debug {
+            debuggable true
+            jniDebuggable true
+            // 移除无用的资源文件
+            shrinkResources false
+            // ZipAlign 优化
+            zipAlignEnabled false
+            // 设置混淆
+            minifyEnabled false
+            // 开发环境下的 BuglyId
+            buildConfigField 'String', 'BUGLY_ID', '\"请自行替换 Bugly 上面的 AppID\"'
+            signingConfig signingConfigs.config
+        }
+
+        release {
+            debuggable false
+            jniDebuggable false
+            // 移除无用的资源文件
+            shrinkResources true
+            // ZipAlign 优化
+            zipAlignEnabled true
+            // 设置混淆
+            minifyEnabled true
+            // 正式环境下的 BuglyId
+            buildConfigField 'String', 'BUGLY_ID', '\"请自行替换 Bugly 上面的 AppID\"'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    packagingOptions {
+        // 剔除这个包下的所有文件（除了签名信息）
+        exclude 'META-INF/*******'
+    }
+
+    // AOP 配置
+    aspectjx {
+        // 排除一些第三方库的包名（Gson、 LeakCanary 和 AOP 有冲突）
+        // 否则就会起冲突：ClassNotFoundException: Didn't find class on path: DexPathList
+        exclude 'androidx', 'com.google', 'com.squareup', 'com.alipay', 'com.taobao', 'org.apache'
+    }
+
+    applicationVariants.all { variant ->
+
+        // Apk 输出文件名配置
+        variant.outputs.all { output ->
+            outputFileName = rootProject.getName() + '_v' + variant.versionName + '_' + variant.buildType.name
+            if (variant.buildType.name == buildTypes.release.getName()) {
+                outputFileName += '_' + new Date().format('MMdd')
+            }
+            outputFileName += '.apk'
+        }
+    }
+}
+
+// api 与 implementation 的区别：https://www.jianshu.com/p/8962d6ba936e
+dependencies {
+    // 基类库
+    implementation project(':base')
+    // 自定义 View
+    implementation project(':widget')
+    // 友盟封装
+    implementation project(':umeng')
+
+    // 网络请求框架
+    implementation project(':library-xhttp2')
+
+    // hutool
+    implementation group: 'cn.hutool', name: 'hutool-all', version: '5.5.4'
+
+    // 网络请求框架：https://github.com/getActivity/EasyHttp
+    implementation 'com.hjq:http:6.9'
+
+    // 权限请求框架：https://github.com/getActivity/XXPermissions
+    implementation 'com.hjq:xxpermissions:6.5'
+
+    // 标题栏框架：https://github.com/getActivity/TitleBar
+    implementation 'com.hjq:titlebar:6.5'
+
+    // 吐司框架：https://github.com/getActivity/ToastUtils
+    implementation 'com.hjq:toast:8.6'
+
+    // OkHttp 框架：https://github.com/square/okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+
+    // JSON 解析框架：https://github.com/google/gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // AOP 插件库：https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+    implementation 'org.aspectj:aspectjrt:1.9.5'
+
+    // 图片加载框架：https://github.com/bumptech/glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // 状态栏沉浸：https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    // 手势 ImageView：https://github.com/chrisbanes/PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    // ViewPager 指示器：https://github.com/romandanylyk/PageIndicatorView
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+
+    // Bugly 异常捕捉：https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=20190418140644
+    implementation 'com.tencent.bugly:crashreport:3.1.9'
+    implementation 'com.tencent.bugly:nativecrashreport:3.7.1'
+
+    // 动画解析库：https://github.com/airbnb/lottie-android
+    // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    // 上拉刷新下拉加载：https://github.com/scwang90/SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+    // SmartRefreshLayout 刷新样式集合库
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.2'
+
+    // 侧滑框架：https://github.com/luckybilly/SmartSwipe
+    implementation 'com.billy.android:smart-swipe:1.1.2'
+    implementation 'com.billy.android:smart-swipe-x:1.1.0'
+
+    // 日志调试：https://github.com/getActivity/Logcat
+    debugImplementation 'com.hjq:logcat:8.2'
+
+    // 内存泄漏：https://github.com/square/leakcanary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
+
+    // 国际化：https://github.com/getActivity/MultiLanguages
+    // 悬浮窗：https://github.com/getActivity/XToast
+    // 工具类：https://github.com/Blankj/AndroidUtilCode
+    // 平板适配：https://github.com/JessYanCoding/AndroidAutoSize
+    // 轮播图：https://github.com/bingoogolapple/BGABanner-Android
+    // 二维码：https://github.com/bingoogolapple/BGAQRCode-Android
+    // 跑马灯：https://github.com/sunfusheng/MarqueeView
+    // 第三方支付：https://github.com/Cuieney/RxPay
+    // Log 打印：https://github.com/JakeWharton/timber
+    // 图片裁剪：https://github.com/Yalantis/uCrop
+    // 图片压缩：https://github.com/Curzibn/Luban
+    // 对象存储：https://github.com/leavesC/DoKV
+    // 对象注解：https://www.jianshu.com/p/f1f888e4a35f
+}

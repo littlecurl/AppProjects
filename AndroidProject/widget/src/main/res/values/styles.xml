@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="edit_main_bg">
+        <item name="android:background">@drawable/bg_view_frame</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

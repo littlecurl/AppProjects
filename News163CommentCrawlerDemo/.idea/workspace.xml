@@ -1,178 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:AndroudAndSpringBootForUploadImage" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:AndroudAndSpringBootForUploadImage" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:LoginBackEnd" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:News163CommentAddMongoDBCrawlerDemo" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="98d8cc62-9ab6-4e27-9096-c9033b8b3fc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/GetPDDPictures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/GetTMallPictures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/DBOpenHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/DBOpenHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/RegisterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/loginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/java/com/example/justloginregistertest/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/test/java/com/example/justloginregistertest/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/app/src/test/java/com/example/justloginregistertest/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JustLoginRegisterTest/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JustLoginRegisterTest/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ViewPager2Demo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ViewPager2Demo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ViewPager2Demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ViewPager2Demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ViewPager2Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ViewPager2Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ViewPager2Demo/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ViewPager2Demo/local.properties" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="2094619148">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="1" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4896">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\Users\littlecurl\.m2\repository" />
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="F:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2020.2.3\plugins\maven\lib\maven3" />
         <option name="userSettingsFile" value="D:\Program Files\JetBrains\IDEA 2018\IntelliJ IDEA Community Edition 2018.2\plugins\maven\lib\maven3\conf\settings-aliyun.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="News163CommentCrawlerDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="News163CommentCrawlerDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="News163CommentCrawlerDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1810" />
-    <option name="height" value="1090" />
-  </component>
+  <component name="ProjectId" id="1m1CytHMHIpgdufSRbbThsmaASi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="News163CommentCrawlerDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="News163CommentCrawlerDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="News163CommentCrawlerDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="News163CommentCrawlerDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="News163CommentCrawlerDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="News163CommentCrawlerDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="News163CommentCrawlerDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="News163CommentCrawlerDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="News163CommentCrawlerDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="News163CommentCrawlerDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="getcomment" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562904857811" />
@@ -182,26 +122,39 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.3402299" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.edu.heuet.getcomment" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Workspaces\IDEA\News163CommentCrawlerDemo\src\main\java\cn\edu\heuet" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GetTMallPictures">
+    <configuration name="GetPDDPictures" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.getcomment.GetPDDPictures" />
+      <module name="News163CommentCrawlerDemo" />
+      <option name="PROGRAM_PARAMETERS" value="https://mobile.yangkeduo.com/goods1.html?_wvx=10&amp;refer_share_uid=5462989221859&amp;share_uin=GIJTOWULOWKQL32D2AVX4FCREA_GEXDA&amp;page_from=23&amp;_wv=41729&amp;refer_share_channel=copy_link&amp;refer_share_id=solNFZQJKQkRx7DunAqtMlnvmjZByQ2e&amp;share_uid=5462989221859&amp;pxq_secret_key=LAZ6LK7DEFPDIGKHTV65RYKP5256SMSSSJVIKAAS46VBMKPM6B2A&amp;goods_id=198276083217&amp;page_id=10014_1608830287251_bece079wfj&amp;is_back=1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetTMallPictures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.getcomment.GetTMallPictures" />
+      <module name="News163CommentCrawlerDemo" />
+      <option name="PROGRAM_PARAMETERS" value="https://detail.tmall.com/item.htm?spm=a220m.1000862.1000725.11.1d814127v6lbRI&amp;id=582808110901&amp;areaId=130400&amp;is_b=1&amp;cat_id=2&amp;rn=717f64868c32cccf0e27b18eb667f2c1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.heuet.getcomment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.heuet.getcomment.Main" />
       <module name="News163CommentCrawlerDemo" />
@@ -215,59 +168,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.GetPDDPictures" />
+      <item itemvalue="Application.GetTMallPictures" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetTMallPictures" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -285,82 +198,78 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="248000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1472" height="878" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20721358" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32931727" />
-      <window_info anchor="bottom" id="Sequence" order="13" />
-      <window_info anchor="bottom" id="JProfiler" order="14" />
-      <window_info anchor="bottom" id="MyBatis Log" order="15" />
-      <window_info anchor="bottom" id="Tail" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Redis Servers" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" visible="true" weight="0.07001414" />
-      <window_info anchor="right" id="RestServices" order="11" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/NewsList.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/News.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Comment.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/heuet/getcomment/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4896">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="184" y="87" width="1089" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608956137207">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="184" y="87" width="1089" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1458.864@0.0.1458.864" timestamp="1608956137207" />
+    <state x="509" y="137" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1608657066659">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="509" y="137" key="#com.intellij.ide.macro.MacrosDialog/0.0.1458.864@0.0.1458.864" timestamp="1608657066659" />
+    <state x="459" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608830595007">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="459" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1458.864@0.0.1458.864" timestamp="1608830595007" />
+    <state width="1110" height="525" key="GridCell.Tab.0.bottom" timestamp="1608993826682">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1110" height="525" key="GridCell.Tab.0.bottom/0.0.1458.864@0.0.1458.864" timestamp="1608993826682" />
+    <state width="1110" height="525" key="GridCell.Tab.0.center" timestamp="1608993826682">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1110" height="525" key="GridCell.Tab.0.center/0.0.1458.864@0.0.1458.864" timestamp="1608993826682" />
+    <state width="1110" height="525" key="GridCell.Tab.0.left" timestamp="1608993826681">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1110" height="525" key="GridCell.Tab.0.left/0.0.1458.864@0.0.1458.864" timestamp="1608993826681" />
+    <state width="1110" height="525" key="GridCell.Tab.0.right" timestamp="1608993826682">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1110" height="525" key="GridCell.Tab.0.right/0.0.1458.864@0.0.1458.864" timestamp="1608993826682" />
+    <state width="1415" height="268" key="GridCell.Tab.1.bottom" timestamp="1608659280121">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="268" key="GridCell.Tab.1.bottom/0.0.1458.864@0.0.1458.864" timestamp="1608659280121" />
+    <state width="1415" height="268" key="GridCell.Tab.1.center" timestamp="1608659280121">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="268" key="GridCell.Tab.1.center/0.0.1458.864@0.0.1458.864" timestamp="1608659280121" />
+    <state width="1415" height="268" key="GridCell.Tab.1.left" timestamp="1608659280121">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="268" key="GridCell.Tab.1.left/0.0.1458.864@0.0.1458.864" timestamp="1608659280121" />
+    <state width="1415" height="268" key="GridCell.Tab.1.right" timestamp="1608659280121">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="268" key="GridCell.Tab.1.right/0.0.1458.864@0.0.1458.864" timestamp="1608659280121" />
+    <state x="163" y="39" key="SettingsEditor" timestamp="1608875422395">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="163" y="39" key="SettingsEditor/0.0.1458.864@0.0.1458.864" timestamp="1608875422395" />
+    <state x="451" y="174" width="543" height="524" key="StructurePopup" timestamp="1608653117818">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="451" y="174" width="543" height="524" key="StructurePopup/0.0.1458.864@0.0.1458.864" timestamp="1608653117818" />
+    <state x="392" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1608658940831">
+      <screen x="0" y="0" width="1458" height="864" />
+    </state>
+    <state x="392" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1458.864@0.0.1458.864" timestamp="1608658940831" />
   </component>
   <component name="masterDetails">
     <states>

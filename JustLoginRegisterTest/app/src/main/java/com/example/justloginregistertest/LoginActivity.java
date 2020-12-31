@@ -28,7 +28,7 @@ import java.util.ArrayList;
  * 就可以把onClick事件写到onCreate()方法之外
  * 这样，onCreate()方法中的代码就不会显得很冗余
  */
-public class loginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     /**
      * 声明自己写的 DBOpenHelper 对象
      * DBOpenHelper(extends SQLiteOpenHelper) 主要用来

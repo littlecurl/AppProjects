@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#eeeeee"
-    tools:context=".loginActivity">
+    tools:context=".LoginActivity">
 <!--
 整体是相对布局，
 在整体上方放三个东西，这三个东西也是相对布局

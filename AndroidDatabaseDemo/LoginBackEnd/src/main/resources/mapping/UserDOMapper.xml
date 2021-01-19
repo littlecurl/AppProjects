@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.heuet.shaohua.dao.UserDOMapper">
+
+  <resultMap id="BaseResultMap" type="edu.heuet.shaohua.dataobject.UserDO">
+    <id     column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="gender" jdbcType="TINYINT" property="gender" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="register_mode" jdbcType="VARCHAR" property="registerMode" />
+    <result column="third_part_id" jdbcType="VARCHAR" property="thirdPartId" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, name, gender, age, telephone, register_mode, third_part_id
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByTelephone" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from user_info
+    where telephone = #{telephone,jdbcType=VARCHAR}
+  </select>
+
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+
+  <insert id="insert" parameterType="edu.heuet.shaohua.dataobject.UserDO">
+    insert into user_info (id, name, gender,
+      age, telephone, register_mode, 
+      third_part_id)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{gender,jdbcType=TINYINT}, 
+      #{age,jdbcType=INTEGER}, #{telephone,jdbcType=VARCHAR}, #{registerMode,jdbcType=VARCHAR}, 
+      #{thirdPartId,jdbcType=VARCHAR})
+  </insert>
+
+  <!-- 需要手动指定  keyProperty="id" useGeneratedKeys="true" -->
+  <!-- insertSelective和单纯的insert相比，前者更有优势 -->
+  <!-- 因为，如果没有指定对应字段，则会使用设计数据库时的默认字段 -->
+  <!-- 而我们在设计数据库时，将默认字段都not null -->
+  <!-- 这样对Java程序友好一些 -->
+  <insert id="insertSelective" parameterType="edu.heuet.shaohua.dataobject.UserDO"
+    keyProperty="id" useGeneratedKeys="true">
+    insert into user_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="telephone != null">
+        telephone,
+      </if>
+      <if test="registerMode != null">
+        register_mode,
+      </if>
+      <if test="thirdPartId != null">
+        third_part_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="telephone != null">
+        #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="registerMode != null">
+        #{registerMode,jdbcType=VARCHAR},
+      </if>
+      <if test="thirdPartId != null">
+        #{thirdPartId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+
+
+  <update id="updateByPrimaryKeySelective" parameterType="edu.heuet.shaohua.dataobject.UserDO">
+    update user_info
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=TINYINT},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="telephone != null">
+        telephone = #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="registerMode != null">
+        register_mode = #{registerMode,jdbcType=VARCHAR},
+      </if>
+      <if test="thirdPartId != null">
+        third_part_id = #{thirdPartId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+  <update id="updateByPrimaryKey" parameterType="edu.heuet.shaohua.dataobject.UserDO">
+    update user_info
+    set name = #{name,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=TINYINT},
+      age = #{age,jdbcType=INTEGER},
+      telephone = #{telephone,jdbcType=VARCHAR},
+      register_mode = #{registerMode,jdbcType=VARCHAR},
+      third_part_id = #{thirdPartId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!-- 数据库链接地址及连接用户密码 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/demo?serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+        <!-- 生成dataobject类存放位置 -->
+        <!-- 意思就是每个数据库表映射的entity java类的位置 -->
+        <!-- 老外真有意思，先说包名targetPackage，然后再说相对路径targetProject -->
+        <javaModelGenerator targetPackage="edu.heuet.shaohua.dataobject" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- 生成数据库映射文件存放位置 -->
+        <!-- 意思就是mybatis到底是按照什么逻辑进行mysql数据库表与java对象之间映射-->
+        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!-- 生成DAO类存放位置 -->
+        <!-- DAO类里持有dataobject的引用，可以进行相应model的操作 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="edu.heuet.shaohua.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!-- 生成mysql对应表的类名 -->
+        <!--<table tableName="user_info" domainObjectName="UserDO"-->
+        <!--enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false"-->
+        <!--enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"/>-->
+        <table tableName="student_inf_mysql" domainObjectName="StudentDO"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"/>
+        <!--<table tableName="user_password" domainObjectName="UserPasswordDO"-->
+        <!--enableCountByExample="false"-->
+        <!--enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false"-->
+        <!--enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"/>-->
+    </context>
+</generatorConfiguration>

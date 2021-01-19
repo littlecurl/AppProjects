@@ -1,0 +1,3 @@
+include ':app'
+include ':xhttp2-lib'
+rootProject.name = "AndroidDatabaseDemo"

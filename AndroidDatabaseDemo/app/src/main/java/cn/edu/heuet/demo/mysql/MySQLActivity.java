@@ -1,6 +1,5 @@
 package cn.edu.heuet.demo.mysql;
 
-import android.content.ContentValues;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -27,6 +26,7 @@ public class MySQLActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
+        setTitle("MySQL");
         binding = DataBindingUtil.setContentView(this, R.layout.activity_demo);
 
         mysqlDemo();

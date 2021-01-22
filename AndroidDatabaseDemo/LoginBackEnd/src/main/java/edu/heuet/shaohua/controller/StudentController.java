@@ -62,13 +62,23 @@ public class StudentController extends BaseController {
             @RequestParam(name = "name", required = false) String name) {
         if (!StringUtils.isEmpty(studentNo)) {
             StudentDO studentDO1 = studentDOMapper.selectByPrimaryKey(studentNo);
-            return CommonReturnType.create(studentDO1.getName());
+
+            if (studentDO1 != null) {
+                return CommonReturnType.create(studentDO1.getName());
+            } else {
+                return CommonReturnType.create("");
+            }
         } else if (!StringUtils.isEmpty(name)) {
             StudentDO studentDO2 = studentDOMapper.selectByName(name);
-            return CommonReturnType.create(studentDO2.getStudentNo());
+
+            if (studentDO2 != null) {
+                return CommonReturnType.create(studentDO2.getStudentNo());
+            } else {
+                return CommonReturnType.create("");
+            }
         } else {
             List<StudentDO> studentDOS = studentDOMapper.getAll();
-            StringBuilder studentBuilder = new StringBuilder();
+            StringBuilder studentBuilder = new StringBuilder("");
             for (StudentDO student : studentDOS) {
                 studentBuilder.append("学号：").append(student.getStudentNo()).append("\n\n");
                 studentBuilder.append("姓名：").append(student.getName()).append("\n\n");

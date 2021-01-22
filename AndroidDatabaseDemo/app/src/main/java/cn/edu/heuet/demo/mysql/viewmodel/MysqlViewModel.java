@@ -24,7 +24,7 @@ import cn.edu.heuet.demo.room.entity.StudentInf;
  * @Author littlecurl
  * @Date 2021/1/19 2:54
  * @Version 1.0.0
- * @Description TODO
+ * @Description 这里实现了网络请求的增、删、改、查方法
  */
 public class MysqlViewModel extends AndroidViewModel {
 
@@ -65,7 +65,7 @@ public class MysqlViewModel extends AndroidViewModel {
     }
 
     public void update(StudentInf studentInf, CallBack callBack) {
-        XHttp.post(NetworkConstant.DELETED_URL)
+        XHttp.post(NetworkConstant.UPDATE_URL)
                 .upObjectAsJson(studentInf)
                 .execute(callBack);
     }

@@ -16,9 +16,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="运行SQLite代码"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/btRoom"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="运行Room代码"
-            app:layout_constraintBottom_toTopOf="@+id/btMysql"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/btLitepal"
             app:layout_constraintEnd_toEndOf="@+id/btSqlite"
             app:layout_constraintStart_toStartOf="@+id/btSqlite"
             app:layout_constraintTop_toBottomOf="@+id/btSqlite" />
@@ -37,7 +38,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="运行MySQL代码"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btLitepal"
+            app:layout_constraintStart_toStartOf="@+id/btLitepal"
+            app:layout_constraintTop_toBottomOf="@+id/btLitepal" />
+
+        <Button
+            android:id="@+id/btLitepal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="运行LitePal代码"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toTopOf="@+id/btMysql"
             app:layout_constraintEnd_toEndOf="@+id/btRoom"
             app:layout_constraintStart_toStartOf="@+id/btRoom"
             app:layout_constraintTop_toBottomOf="@+id/btRoom" />

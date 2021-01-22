@@ -7,9 +7,11 @@ import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 
 @Entity(tableName = "student_inf_room", indices = {@Index(value = "student_no")})
-public class StudentInf {
+public class StudentInf implements Serializable {
     @PrimaryKey
     @ColumnInfo(name = "student_no")
     @NonNull

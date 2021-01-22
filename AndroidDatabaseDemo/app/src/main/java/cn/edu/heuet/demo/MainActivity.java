@@ -2,11 +2,13 @@ package cn.edu.heuet.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import cn.edu.heuet.demo.databinding.ActivityMainBinding;
+import cn.edu.heuet.demo.litepal.LitePalActivity;
 import cn.edu.heuet.demo.mysql.MySQLActivity;
 import cn.edu.heuet.demo.room.RoomActivity;
 import cn.edu.heuet.demo.sqlite.SQLiteActivity;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.btSqlite.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SQLiteActivity.class)));
         binding.btRoom.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, RoomActivity.class)));
+        binding.btLitepal.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LitePalActivity.class)));
         binding.btMysql.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MySQLActivity.class)));
     }
 

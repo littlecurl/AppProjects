@@ -7,9 +7,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/Theme.AndroidDatabaseDemo">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,6 +21,7 @@
         <activity android:name=".sqlite.SQLiteActivity" />
         <activity android:name=".room.RoomActivity" />
         <activity android:name=".mysql.MySQLActivity" />
+        <activity android:name=".litepal.LitePalActivity" />
     </application>
 
 </manifest>

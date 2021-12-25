@@ -1,0 +1,80 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            // ZipAlign优化, Google Play 强制要求，
+            // 可以让安装包中的资源按4字节对齐，这样可以减少应用在运行时的内存消耗
+            zipAlignEnabled true
+            // build时缩减应用
+            minifyEnabled true
+            // 是否混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    /*
+    在 Project 级别的 build.gradle 最下方声明 ext 即可
+     ext {
+        compileSdkVersion = 29
+        buildToolsVersion = "29.0.2"
+        minSdkVersion = 21
+        targetSdkVersion = 29
+        versionCode = 3
+        versionName = 'V1.0.0-alpha03'
+
+        appcompat = '1.2.0'
+
+        retrofit2 = '2.7.1'
+        retrofit2_mock = '2.4.0'
+        retrofit2AdapterRxjava='2.4.0'
+
+        rxjava='2.2.17'
+        rxandroid='2.1.1'
+
+        okhttp = '4.2.2'
+
+        gson = '2.8.2'
+     }
+     */
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appcompat"
+    //使用retrofit的依赖包
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit2AdapterRxjava"
+
+    //RxJava
+    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava"
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid"
+
+    //OkHttp的依赖包
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp"
+    //Gson序列化反序列化的依赖包
+    implementation "com.google.code.gson:gson:$rootProject.ext.gson"
+    //磁盘缓存的依赖包
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+
+}
+
+

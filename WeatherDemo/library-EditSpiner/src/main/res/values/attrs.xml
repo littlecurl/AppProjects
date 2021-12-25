@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditSpinner">
+        <attr name="hint" format="string" />
+        <attr name="rightImage" format="reference" />
+        <attr name="Background" format="reference" />
+        <attr name="maxLine" format="integer" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_sipnner_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:id="@+id/edit_spinner_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_sipnner_edit"
+        android:layout_alignEnd="@+id/edit_sipnner_edit"
+        android:layout_alignRight="@+id/edit_sipnner_edit"
+        android:layout_alignTop="@+id/edit_sipnner_edit"
+        android:padding="8dp"
+        android:src="@drawable/ic_expand_more_black"/>
+
+    <View
+        android:id="@+id/edit_spinner_expand_above"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_sipnner_edit"
+        android:layout_alignLeft="@id/edit_spinner_expand"
+        android:layout_alignRight="@id/edit_spinner_expand"
+        android:layout_alignTop="@+id/edit_sipnner_edit"
+        android:padding="8dp"/>
+</RelativeLayout>

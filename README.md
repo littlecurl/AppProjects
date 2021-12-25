@@ -8,7 +8,11 @@
 
 ### Android相关
 
-### [新增]百度地图定位
+### [新增]天气预报|简单版
+
+1. 天气预报Demo  [WeatherDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/WeatherDemo.zip)
+
+### 百度地图定位
 
 1. 仅仅百度地图定位Demo [JustBaiDuMapLocationDemo.zip](https://gitee.com/littlecurl/AppProjects/raw/master/JustBaiDuMapLocationDemo.zip)
 
